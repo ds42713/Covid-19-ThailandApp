@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		514FFE98C2B3BE7DB12E1979 /* Pods_Covid_19_Thailand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51712E8C8179EDA777B5A34 /* Pods_Covid_19_Thailand.framework */; };
+		872EE44E251D9D4A00B58F61 /* covid19API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872EE44D251D9D4A00B58F61 /* covid19API.swift */; };
+		872EE453251DA10D00B58F61 /* Covid19View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872EE452251DA10D00B58F61 /* Covid19View.swift */; };
+		87E616BD251D2468005CCF14 /* Covid_19_ThailandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E616BC251D2468005CCF14 /* Covid_19_ThailandApp.swift */; };
+		87E616BF251D2468005CCF14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E616BE251D2468005CCF14 /* ContentView.swift */; };
+		87E616C1251D246D005CCF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E616C0251D246D005CCF14 /* Assets.xcassets */; };
+		87E616C4251D246D005CCF14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E616C3251D246D005CCF14 /* Preview Assets.xcassets */; };
+		87E616CF251D246E005CCF14 /* Covid_19_ThailandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E616CE251D246E005CCF14 /* Covid_19_ThailandTests.swift */; };
+		87E616DA251D246E005CCF14 /* Covid_19_ThailandUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E616D9251D246E005CCF14 /* Covid_19_ThailandUITests.swift */; };
+		87E616EB251D2575005CCF14 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 87E616EA251D2575005CCF14 /* Podfile */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		87E616CB251D246E005CCF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87E616B1251D2467005CCF14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87E616B8251D2468005CCF14;
+			remoteInfo = "Covid-19-Thailand";
+		};
+		87E616D6251D246E005CCF14 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87E616B1251D2467005CCF14 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 87E616B8251D2468005CCF14;
+			remoteInfo = "Covid-19-Thailand";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		872EE44D251D9D4A00B58F61 /* covid19API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = covid19API.swift; sourceTree = "<group>"; };
+		872EE452251DA10D00B58F61 /* Covid19View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19View.swift; sourceTree = "<group>"; };
+		87E616B9251D2468005CCF14 /* Covid-19-Thailand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19-Thailand.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E616BC251D2468005CCF14 /* Covid_19_ThailandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid_19_ThailandApp.swift; sourceTree = "<group>"; };
+		87E616BE251D2468005CCF14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		87E616C0251D246D005CCF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		87E616C3251D246D005CCF14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		87E616C5251D246D005CCF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E616CA251D246E005CCF14 /* Covid-19-ThailandTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Covid-19-ThailandTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E616CE251D246E005CCF14 /* Covid_19_ThailandTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid_19_ThailandTests.swift; sourceTree = "<group>"; };
+		87E616D0251D246E005CCF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E616D5251D246E005CCF14 /* Covid-19-ThailandUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Covid-19-ThailandUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87E616D9251D246E005CCF14 /* Covid_19_ThailandUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid_19_ThailandUITests.swift; sourceTree = "<group>"; };
+		87E616DB251D246E005CCF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		87E616EA251D2575005CCF14 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		E28114C9F24D21150BABC977 /* Pods-Covid-19-Thailand.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid-19-Thailand.release.xcconfig"; path = "Target Support Files/Pods-Covid-19-Thailand/Pods-Covid-19-Thailand.release.xcconfig"; sourceTree = "<group>"; };
+		E51712E8C8179EDA777B5A34 /* Pods_Covid_19_Thailand.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Covid_19_Thailand.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6B5A7E3FF5F31C8189F744 /* Pods-Covid-19-Thailand.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Covid-19-Thailand.debug.xcconfig"; path = "Target Support Files/Pods-Covid-19-Thailand/Pods-Covid-19-Thailand.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		87E616B6251D2468005CCF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				514FFE98C2B3BE7DB12E1979 /* Pods_Covid_19_Thailand.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E616C7251D246E005CCF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E616D2251D246E005CCF14 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DD057355D078A527CC26A6A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA6B5A7E3FF5F31C8189F744 /* Pods-Covid-19-Thailand.debug.xcconfig */,
+				E28114C9F24D21150BABC977 /* Pods-Covid-19-Thailand.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		87E616B0251D2467005CCF14 = {
+			isa = PBXGroup;
+			children = (
+				87E616EA251D2575005CCF14 /* Podfile */,
+				87E616BB251D2468005CCF14 /* Covid-19-Thailand */,
+				87E616CD251D246E005CCF14 /* Covid-19-ThailandTests */,
+				87E616D8251D246E005CCF14 /* Covid-19-ThailandUITests */,
+				87E616BA251D2468005CCF14 /* Products */,
+				4DD057355D078A527CC26A6A /* Pods */,
+				B2967153C81569A2BFF7B5C1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		87E616BA251D2468005CCF14 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				87E616B9251D2468005CCF14 /* Covid-19-Thailand.app */,
+				87E616CA251D246E005CCF14 /* Covid-19-ThailandTests.xctest */,
+				87E616D5251D246E005CCF14 /* Covid-19-ThailandUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87E616BB251D2468005CCF14 /* Covid-19-Thailand */ = {
+			isa = PBXGroup;
+			children = (
+				87E616BC251D2468005CCF14 /* Covid_19_ThailandApp.swift */,
+				87E616BE251D2468005CCF14 /* ContentView.swift */,
+				872EE452251DA10D00B58F61 /* Covid19View.swift */,
+				87E616C0251D246D005CCF14 /* Assets.xcassets */,
+				87E616C5251D246D005CCF14 /* Info.plist */,
+				87E616C2251D246D005CCF14 /* Preview Content */,
+				872EE44D251D9D4A00B58F61 /* covid19API.swift */,
+			);
+			path = "Covid-19-Thailand";
+			sourceTree = "<group>";
+		};
+		87E616C2251D246D005CCF14 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				87E616C3251D246D005CCF14 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		87E616CD251D246E005CCF14 /* Covid-19-ThailandTests */ = {
+			isa = PBXGroup;
+			children = (
+				87E616CE251D246E005CCF14 /* Covid_19_ThailandTests.swift */,
+				87E616D0251D246E005CCF14 /* Info.plist */,
+			);
+			path = "Covid-19-ThailandTests";
+			sourceTree = "<group>";
+		};
+		87E616D8251D246E005CCF14 /* Covid-19-ThailandUITests */ = {
+			isa = PBXGroup;
+			children = (
+				87E616D9251D246E005CCF14 /* Covid_19_ThailandUITests.swift */,
+				87E616DB251D246E005CCF14 /* Info.plist */,
+			);
+			path = "Covid-19-ThailandUITests";
+			sourceTree = "<group>";
+		};
+		B2967153C81569A2BFF7B5C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E51712E8C8179EDA777B5A34 /* Pods_Covid_19_Thailand.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		87E616B8251D2468005CCF14 /* Covid-19-Thailand */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E616DE251D246E005CCF14 /* Build configuration list for PBXNativeTarget "Covid-19-Thailand" */;
+			buildPhases = (
+				CCF459FC001E9B1EFB7748DD /* [CP] Check Pods Manifest.lock */,
+				87E616B5251D2468005CCF14 /* Sources */,
+				87E616B6251D2468005CCF14 /* Frameworks */,
+				87E616B7251D2468005CCF14 /* Resources */,
+				38E404032C3CFB32446C96B6 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Covid-19-Thailand";
+			productName = "Covid-19-Thailand";
+			productReference = 87E616B9251D2468005CCF14 /* Covid-19-Thailand.app */;
+			productType = "com.apple.product-type.application";
+		};
+		87E616C9251D246E005CCF14 /* Covid-19-ThailandTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E616E1251D246E005CCF14 /* Build configuration list for PBXNativeTarget "Covid-19-ThailandTests" */;
+			buildPhases = (
+				87E616C6251D246E005CCF14 /* Sources */,
+				87E616C7251D246E005CCF14 /* Frameworks */,
+				87E616C8251D246E005CCF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87E616CC251D246E005CCF14 /* PBXTargetDependency */,
+			);
+			name = "Covid-19-ThailandTests";
+			productName = "Covid-19-ThailandTests";
+			productReference = 87E616CA251D246E005CCF14 /* Covid-19-ThailandTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		87E616D4251D246E005CCF14 /* Covid-19-ThailandUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 87E616E4251D246E005CCF14 /* Build configuration list for PBXNativeTarget "Covid-19-ThailandUITests" */;
+			buildPhases = (
+				87E616D1251D246E005CCF14 /* Sources */,
+				87E616D2251D246E005CCF14 /* Frameworks */,
+				87E616D3251D246E005CCF14 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				87E616D7251D246E005CCF14 /* PBXTargetDependency */,
+			);
+			name = "Covid-19-ThailandUITests";
+			productName = "Covid-19-ThailandUITests";
+			productReference = 87E616D5251D246E005CCF14 /* Covid-19-ThailandUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		87E616B1251D2467005CCF14 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					87E616B8251D2468005CCF14 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					87E616C9251D246E005CCF14 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 87E616B8251D2468005CCF14;
+					};
+					87E616D4251D246E005CCF14 = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 87E616B8251D2468005CCF14;
+					};
+				};
+			};
+			buildConfigurationList = 87E616B4251D2467005CCF14 /* Build configuration list for PBXProject "Covid-19-Thailand" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 87E616B0251D2467005CCF14;
+			productRefGroup = 87E616BA251D2468005CCF14 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				87E616B8251D2468005CCF14 /* Covid-19-Thailand */,
+				87E616C9251D246E005CCF14 /* Covid-19-ThailandTests */,
+				87E616D4251D246E005CCF14 /* Covid-19-ThailandUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		87E616B7251D2468005CCF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E616EB251D2575005CCF14 /* Podfile in Resources */,
+				87E616C4251D246D005CCF14 /* Preview Assets.xcassets in Resources */,
+				87E616C1251D246D005CCF14 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E616C8251D246E005CCF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E616D3251D246E005CCF14 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38E404032C3CFB32446C96B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Covid-19-Thailand/Pods-Covid-19-Thailand-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Covid-19-Thailand/Pods-Covid-19-Thailand-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Covid-19-Thailand/Pods-Covid-19-Thailand-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CCF459FC001E9B1EFB7748DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Covid-19-Thailand-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		87E616B5251D2468005CCF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E616BF251D2468005CCF14 /* ContentView.swift in Sources */,
+				87E616BD251D2468005CCF14 /* Covid_19_ThailandApp.swift in Sources */,
+				872EE453251DA10D00B58F61 /* Covid19View.swift in Sources */,
+				872EE44E251D9D4A00B58F61 /* covid19API.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E616C6251D246E005CCF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E616CF251D246E005CCF14 /* Covid_19_ThailandTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		87E616D1251D246E005CCF14 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87E616DA251D246E005CCF14 /* Covid_19_ThailandUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		87E616CC251D246E005CCF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87E616B8251D2468005CCF14 /* Covid-19-Thailand */;
+			targetProxy = 87E616CB251D246E005CCF14 /* PBXContainerItemProxy */;
+		};
+		87E616D7251D246E005CCF14 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 87E616B8251D2468005CCF14 /* Covid-19-Thailand */;
+			targetProxy = 87E616D6251D246E005CCF14 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		87E616DC251D246E005CCF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		87E616DD251D246E005CCF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		87E616DF251D246E005CCF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA6B5A7E3FF5F31C8189F744 /* Pods-Covid-19-Thailand.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Covid-19-Thailand/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FXN6H76FY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Covid-19-Thailand/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ds42713.Covid-19-Thailand";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		87E616E0251D246E005CCF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28114C9F24D21150BABC977 /* Pods-Covid-19-Thailand.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Covid-19-Thailand/Preview Content\"";
+				DEVELOPMENT_TEAM = 5FXN6H76FY;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "Covid-19-Thailand/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ds42713.Covid-19-Thailand";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		87E616E2251D246E005CCF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FXN6H76FY;
+				INFOPLIST_FILE = "Covid-19-ThailandTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ds42713.Covid-19-ThailandTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Covid-19-Thailand.app/Covid-19-Thailand";
+			};
+			name = Debug;
+		};
+		87E616E3251D246E005CCF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FXN6H76FY;
+				INFOPLIST_FILE = "Covid-19-ThailandTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ds42713.Covid-19-ThailandTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Covid-19-Thailand.app/Covid-19-Thailand";
+			};
+			name = Release;
+		};
+		87E616E5251D246E005CCF14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FXN6H76FY;
+				INFOPLIST_FILE = "Covid-19-ThailandUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ds42713.Covid-19-ThailandUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Covid-19-Thailand";
+			};
+			name = Debug;
+		};
+		87E616E6251D246E005CCF14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5FXN6H76FY;
+				INFOPLIST_FILE = "Covid-19-ThailandUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Ds42713.Covid-19-ThailandUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Covid-19-Thailand";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		87E616B4251D2467005CCF14 /* Build configuration list for PBXProject "Covid-19-Thailand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E616DC251D246E005CCF14 /* Debug */,
+				87E616DD251D246E005CCF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E616DE251D246E005CCF14 /* Build configuration list for PBXNativeTarget "Covid-19-Thailand" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E616DF251D246E005CCF14 /* Debug */,
+				87E616E0251D246E005CCF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E616E1251D246E005CCF14 /* Build configuration list for PBXNativeTarget "Covid-19-ThailandTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E616E2251D246E005CCF14 /* Debug */,
+				87E616E3251D246E005CCF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		87E616E4251D246E005CCF14 /* Build configuration list for PBXNativeTarget "Covid-19-ThailandUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				87E616E5251D246E005CCF14 /* Debug */,
+				87E616E6251D246E005CCF14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 87E616B1251D2467005CCF14 /* Project object */;
+}
