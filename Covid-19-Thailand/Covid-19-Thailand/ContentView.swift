@@ -10,20 +10,15 @@ import Alamofire
 struct ContentView: View {
     @State var Covid19data:[Datum] = []
     var body: some View {
+        
         NavigationView {
             List {
                 ForEach(self.Covid19data, id: \.date){ item in
                     NavigationLink(destination:
-                        VStack {
-                            Text("วันที่ : \(item.date)")
-                            Text("ผู้ติดเชื้อรายใหม่ : \(item.newConfirmed)")
-                            Text("ติดเชื้อสะสม :  \(item.confirmed)")
-                            Text("รักษาอยู่ใน รพ. :  \(item.hospitalized)")
-                            Text("รักษาหายแล้วรายใหม่ :  \(item.newRecovered)")
-                            Text("รักษาหายแล้ว :  \(item.recovered)")
-                            Text("ผู้เสียชีวิตรายใหม่ :  \(item.newDeaths)")
-                            Text("ผู้เสียชีวิตสะสม : \(item.deaths)")
-                    } ) {
+                                    Covid19View(item: item)
+                                    .navigationTitle(  Text("วันที่ : \(item.date)").foregroundColor(.black)  )
+                    )
+                    {
                 Text("Date:  \(item.date)")
             }
                 }
@@ -42,6 +37,7 @@ struct ContentView: View {
                 let result = try JSONDecoder().decode(Covid19API.self, from: response.data!)
                 self.Covid19data.removeAll()
                 self.Covid19data = result.data
+                self.Covid19data = Covid19data.sorted(by: {$0.date > $1.date}) // เรียงวันเดือนปี
             } catch{
                 print(error.localizedDescription)
                 }
@@ -57,3 +53,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+
