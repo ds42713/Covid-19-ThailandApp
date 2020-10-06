@@ -8,15 +8,18 @@
 import SwiftUI
 import Alamofire
 struct ContentView: View {
+    
     @State var Covid19data:[Datum] = []
+
     var body: some View {
         
         NavigationView {
             List {
-                ForEach(self.Covid19data, id: \.date){ item in
+                ForEach(self.Covid19data , id: \.date) { item in
                     NavigationLink(destination:
-                                    Covid19View(item: item)
-                                    .navigationTitle(  Text("วันที่ : \(item.date)").foregroundColor(.black)  )
+                                    Covid19View(CovidDataView: item)
+                                    .navigationTitle(
+                                        Text("วันที่ : \(item.date)").foregroundColor(.black)  )
                     )
                     {
                 Text("Date:  \(item.date)")
@@ -24,7 +27,7 @@ struct ContentView: View {
                 }
             }
             .navigationBarTitle("Covid-19 Thailand")
-            .onAppear { self.feeddata() }
+           .onAppear { self.feeddata() }
         }
     }
 

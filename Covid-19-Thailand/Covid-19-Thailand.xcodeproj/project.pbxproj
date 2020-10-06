@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		514FFE98C2B3BE7DB12E1979 /* Pods_Covid_19_Thailand.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E51712E8C8179EDA777B5A34 /* Pods_Covid_19_Thailand.framework */; };
+		87029D19252AEF4F0022A998 /* TodayCovid19.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87029D18252AEF4F0022A998 /* TodayCovid19.swift */; };
 		872EE44E251D9D4A00B58F61 /* covid19API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872EE44D251D9D4A00B58F61 /* covid19API.swift */; };
 		8736C278252407B50018C41D /* Covid19View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8736C277252407B50018C41D /* Covid19View.swift */; };
 		8755EF41251FD10E00D6211D /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8755EF40251FD10E00D6211D /* WidgetKit.framework */; };
@@ -17,7 +18,8 @@
 		8755EF4B251FD11100D6211D /* widget_covid_19.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8755EF47251FD10E00D6211D /* widget_covid_19.intentdefinition */; };
 		8755EF4C251FD11100D6211D /* widget_covid_19.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 8755EF47251FD10E00D6211D /* widget_covid_19.intentdefinition */; };
 		8755EF4F251FD11100D6211D /* widget-covid-19Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8755EF3F251FD10E00D6211D /* widget-covid-19Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		87DB9DDE2525AFB000F68DAB /* covid19API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872EE44D251D9D4A00B58F61 /* covid19API.swift */; };
+		878E9FED252C2CEF001E0AE4 /* Covid19TodayAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878E9FEC252C2CEF001E0AE4 /* Covid19TodayAPI.swift */; };
+		87AA4C0E2529A22200999C1B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA4C0D2529A22200999C1B /* HomeView.swift */; };
 		87E616BD251D2468005CCF14 /* Covid_19_ThailandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E616BC251D2468005CCF14 /* Covid_19_ThailandApp.swift */; };
 		87E616BF251D2468005CCF14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E616BE251D2468005CCF14 /* ContentView.swift */; };
 		87E616C1251D246D005CCF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E616C0251D246D005CCF14 /* Assets.xcassets */; };
@@ -66,6 +68,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		87029D18252AEF4F0022A998 /* TodayCovid19.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCovid19.swift; sourceTree = "<group>"; wrapsLines = 1; };
 		872EE44D251D9D4A00B58F61 /* covid19API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = covid19API.swift; sourceTree = "<group>"; };
 		8736C277252407B50018C41D /* Covid19View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19View.swift; sourceTree = "<group>"; };
 		8755EF3F251FD10E00D6211D /* widget-covid-19Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "widget-covid-19Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +78,8 @@
 		8755EF47251FD10E00D6211D /* widget_covid_19.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = widget_covid_19.intentdefinition; sourceTree = "<group>"; };
 		8755EF48251FD11100D6211D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8755EF4A251FD11100D6211D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		878E9FEC252C2CEF001E0AE4 /* Covid19TodayAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19TodayAPI.swift; sourceTree = "<group>"; };
+		87AA4C0D2529A22200999C1B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		87E616B9251D2468005CCF14 /* Covid-19-Thailand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19-Thailand.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E616BC251D2468005CCF14 /* Covid_19_ThailandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid_19_ThailandApp.swift; sourceTree = "<group>"; };
 		87E616BE251D2468005CCF14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -137,6 +142,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		87029D28252AF31F0022A998 /* CovidList */ = {
+			isa = PBXGroup;
+			children = (
+				872EE44D251D9D4A00B58F61 /* covid19API.swift */,
+				87E616BE251D2468005CCF14 /* ContentView.swift */,
+				8736C277252407B50018C41D /* Covid19View.swift */,
+			);
+			path = CovidList;
+			sourceTree = "<group>";
+		};
 		8755EF44251FD10E00D6211D /* widget-covid-19 */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,9 +192,10 @@
 			isa = PBXGroup;
 			children = (
 				87E616BC251D2468005CCF14 /* Covid_19_ThailandApp.swift */,
-				87E616BE251D2468005CCF14 /* ContentView.swift */,
-				8736C277252407B50018C41D /* Covid19View.swift */,
-				872EE44D251D9D4A00B58F61 /* covid19API.swift */,
+				87AA4C0D2529A22200999C1B /* HomeView.swift */,
+				87029D18252AEF4F0022A998 /* TodayCovid19.swift */,
+				87029D28252AF31F0022A998 /* CovidList */,
+				878E9FEC252C2CEF001E0AE4 /* Covid19TodayAPI.swift */,
 				87E616C0251D246D005CCF14 /* Assets.xcassets */,
 				87E616C5251D246D005CCF14 /* Info.plist */,
 				87E616C2251D246D005CCF14 /* Preview Content */,
@@ -430,7 +446,6 @@
 			files = (
 				8755EF4B251FD11100D6211D /* widget_covid_19.intentdefinition in Sources */,
 				8755EF46251FD10E00D6211D /* widget_covid_19.swift in Sources */,
-				87DB9DDE2525AFB000F68DAB /* covid19API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,8 +455,11 @@
 			files = (
 				8755EF4C251FD11100D6211D /* widget_covid_19.intentdefinition in Sources */,
 				8736C278252407B50018C41D /* Covid19View.swift in Sources */,
+				878E9FED252C2CEF001E0AE4 /* Covid19TodayAPI.swift in Sources */,
 				87E616BF251D2468005CCF14 /* ContentView.swift in Sources */,
+				87AA4C0E2529A22200999C1B /* HomeView.swift in Sources */,
 				87E616BD251D2468005CCF14 /* Covid_19_ThailandApp.swift in Sources */,
+				87029D19252AEF4F0022A998 /* TodayCovid19.swift in Sources */,
 				872EE44E251D9D4A00B58F61 /* covid19API.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
