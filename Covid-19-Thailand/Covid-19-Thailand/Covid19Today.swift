@@ -1,25 +1,19 @@
 //
-//  TodayCovid19.swift
+//  Covid19Today.swift
 //  Covid-19-Thailand
 //
-//  Created by Pongsakorn Praditkanok on 5/10/2563 BE.
+//  Created by Pongsakorn Praditkanok on 6/10/2563 BE.
 //
 
 import SwiftUI
 import Alamofire
-struct TodayCovid19: View {
-    
-    @State var Covid19Today:[Covid19TodayAPI] = []
-
+struct Covid19Today: View {
+    @State var Covid19Todayconfirmed:Int
+    @State var Covid19TodaynewConfirmed:Int
     var body: some View {
         VStack {
-
-            ForEach (self.Covid19Today , id: \.updateDate) { item in
-                Text("ติดเชื้อสะสม : \(item.confirmed)").font(.headline)
-                Text(" ( + \(item.newConfirmed)").font(.headline)
-            }
-
-
+            Text("ติดเชื้อสะสม : \(Covid19Todayconfirmed)").font(.headline)
+            Text(" ( + \(Covid19TodaynewConfirmed) ) ").font(.headline)
         }.onAppear { self.feeddataToday() }
         .frame(width: 300, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/).background(Color(red: 0.99, green: 0.47, blue: 0.66, opacity: 1.00)).cornerRadius(10).padding()
     }
@@ -29,9 +23,11 @@ struct TodayCovid19: View {
             switch response.result {
             case .success: print(response.value)
                 do {
-                        let result = try JSONDecoder().decode(CovidAPIToday.self, from: response.data!)
-                        self.Covid19Today.removeAll()
-                        self.Covid19Today = result.data
+                        let result = try JSONDecoder().decode(TodayCovid19API.self, from: response.data!)
+                    // self.Covid19Today.removeAll
+                    self.Covid19Todayconfirmed = result.confirmed
+                    self.Covid19TodaynewConfirmed = result.newConfirmed
+                  
                 } catch{
                 print(error.localizedDescription)
                         }
@@ -39,11 +35,10 @@ struct TodayCovid19: View {
             }
         }
     }
-    
 }
 
-struct TodayCovid19_Previews: PreviewProvider {
+struct Covid19Today_Previews: PreviewProvider {
     static var previews: some View {
-        TodayCovid19()
+        Covid19Today(Covid19Todayconfirmed: .bitWidth, Covid19TodaynewConfirmed: .bitWidth)
     }
 }

@@ -1,39 +1,19 @@
 //
-//  Covid19TodayAPI.swift
+//  TodayCovid19API.swift
 //  Covid-19-Thailand
 //
 //  Created by Pongsakorn Praditkanok on 6/10/2563 BE.
 //
 
 import Foundation
-// MARK: - Covid19TodayAPI
-struct CovidAPIToday: Codable {
-   
-    let updateDate: String
-    let source, devBy, severBy: String
-    let data:[Covid19TodayAPI]
-    
-    enum CodingKeys: String, CodingKey {
-       
-        case updateDate = "UpdateDate"
-        case source = "Source"
-        case devBy = "DevBy"
-        case severBy = "SeverBy"
-        case data = "Data"
-    }
-}
-
-
-
-struct Covid19TodayAPI: Codable {
-    
+// MARK: - TodayCovid19API
+struct TodayCovid19API: Codable {
     let confirmed, recovered, hospitalized, deaths: Int
     let newConfirmed, newRecovered, newHospitalized, newDeaths: Int
     let updateDate: String
     let source, devBy, severBy: String
 
     enum CodingKeys: String, CodingKey {
-
         case confirmed = "Confirmed"
         case recovered = "Recovered"
         case hospitalized = "Hospitalized"

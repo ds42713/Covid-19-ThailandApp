@@ -11,7 +11,7 @@ struct HomeView: View {
 
     var body: some View {
         TabView {
-            TodayCovid19().tabItem { Image(systemName: "house") }.tag(1)
+            Covid19Today(Covid19Todayconfirmed: .bitWidth, Covid19TodaynewConfirmed: .bitWidth).tabItem { Image(systemName: "house") }.tag(1)
             ContentView().tabItem { Image(systemName: "list.dash" ) }.tag(2)
         }
     }
