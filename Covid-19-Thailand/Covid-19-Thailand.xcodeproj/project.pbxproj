@@ -21,7 +21,7 @@
 		878EA005252C5218001E0AE4 /* Covid19Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 878EA004252C5218001E0AE4 /* Covid19Today.swift */; };
 		87AA4C0E2529A22200999C1B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AA4C0D2529A22200999C1B /* HomeView.swift */; };
 		87E616BD251D2468005CCF14 /* Covid_19_ThailandApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E616BC251D2468005CCF14 /* Covid_19_ThailandApp.swift */; };
-		87E616BF251D2468005CCF14 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E616BE251D2468005CCF14 /* ContentView.swift */; };
+		87E616BF251D2468005CCF14 /* Covid19List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E616BE251D2468005CCF14 /* Covid19List.swift */; };
 		87E616C1251D246D005CCF14 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E616C0251D246D005CCF14 /* Assets.xcassets */; };
 		87E616C4251D246D005CCF14 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87E616C3251D246D005CCF14 /* Preview Assets.xcassets */; };
 		87E616CF251D246E005CCF14 /* Covid_19_ThailandTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87E616CE251D246E005CCF14 /* Covid_19_ThailandTests.swift */; };
@@ -82,7 +82,7 @@
 		87AA4C0D2529A22200999C1B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		87E616B9251D2468005CCF14 /* Covid-19-Thailand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Covid-19-Thailand.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87E616BC251D2468005CCF14 /* Covid_19_ThailandApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid_19_ThailandApp.swift; sourceTree = "<group>"; };
-		87E616BE251D2468005CCF14 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		87E616BE251D2468005CCF14 /* Covid19List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Covid19List.swift; sourceTree = "<group>"; };
 		87E616C0251D246D005CCF14 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		87E616C3251D246D005CCF14 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		87E616C5251D246D005CCF14 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				872EE44D251D9D4A00B58F61 /* covid19API.swift */,
-				87E616BE251D2468005CCF14 /* ContentView.swift */,
+				87E616BE251D2468005CCF14 /* Covid19List.swift */,
 				8736C277252407B50018C41D /* Covid19View.swift */,
 			);
 			path = CovidList;
@@ -161,6 +161,15 @@
 				8755EF4A251FD11100D6211D /* Info.plist */,
 			);
 			path = "widget-covid-19";
+			sourceTree = "<group>";
+		};
+		878EA016252C56E4001E0AE4 /* CovidTodayUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				878EA004252C5218001E0AE4 /* Covid19Today.swift */,
+				878E9FFE252C51DA001E0AE4 /* TodayCovid19API.swift */,
+			);
+			path = CovidTodayUpdate;
 			sourceTree = "<group>";
 		};
 		87E616B0251D2467005CCF14 = {
@@ -193,9 +202,8 @@
 			children = (
 				87E616BC251D2468005CCF14 /* Covid_19_ThailandApp.swift */,
 				87AA4C0D2529A22200999C1B /* HomeView.swift */,
+				878EA016252C56E4001E0AE4 /* CovidTodayUpdate */,
 				87029D28252AF31F0022A998 /* CovidList */,
-				878EA004252C5218001E0AE4 /* Covid19Today.swift */,
-				878E9FFE252C51DA001E0AE4 /* TodayCovid19API.swift */,
 				87E616C0251D246D005CCF14 /* Assets.xcassets */,
 				87E616C5251D246D005CCF14 /* Info.plist */,
 				87E616C2251D246D005CCF14 /* Preview Content */,
@@ -456,7 +464,7 @@
 				8755EF4C251FD11100D6211D /* widget_covid_19.intentdefinition in Sources */,
 				878EA005252C5218001E0AE4 /* Covid19Today.swift in Sources */,
 				8736C278252407B50018C41D /* Covid19View.swift in Sources */,
-				87E616BF251D2468005CCF14 /* ContentView.swift in Sources */,
+				87E616BF251D2468005CCF14 /* Covid19List.swift in Sources */,
 				87AA4C0E2529A22200999C1B /* HomeView.swift in Sources */,
 				87E616BD251D2468005CCF14 /* Covid_19_ThailandApp.swift in Sources */,
 				878E9FFF252C51DA001E0AE4 /* TodayCovid19API.swift in Sources */,

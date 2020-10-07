@@ -8,11 +8,11 @@
 import SwiftUI
 import Alamofire
 struct HomeView: View {
-
+    
     var body: some View {
         TabView {
             Covid19Today(Covid19Todayconfirmed: .bitWidth, Covid19TodaynewConfirmed: .bitWidth).tabItem { Image(systemName: "house") }.tag(1)
-            ContentView().tabItem { Image(systemName: "list.dash" ) }.tag(2)
+            Covid19List().tabItem { Image(systemName: "list.dash" ) }.tag(2)
         }
     }
 }

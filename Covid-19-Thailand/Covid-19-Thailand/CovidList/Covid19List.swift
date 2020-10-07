@@ -7,7 +7,7 @@
 
 import SwiftUI
 import Alamofire
-struct ContentView: View {
+struct Covid19List: View {
     
     @State var Covid19data:[Datum] = []
 
@@ -53,7 +53,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Covid19List()
     }
 }
 
