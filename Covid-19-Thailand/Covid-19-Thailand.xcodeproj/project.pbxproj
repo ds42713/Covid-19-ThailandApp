@@ -145,9 +145,9 @@
 		87029D28252AF31F0022A998 /* CovidList */ = {
 			isa = PBXGroup;
 			children = (
-				872EE44D251D9D4A00B58F61 /* covid19API.swift */,
 				87E616BE251D2468005CCF14 /* Covid19List.swift */,
 				8736C277252407B50018C41D /* Covid19View.swift */,
+				872EE44D251D9D4A00B58F61 /* covid19API.swift */,
 			);
 			path = CovidList;
 			sourceTree = "<group>";

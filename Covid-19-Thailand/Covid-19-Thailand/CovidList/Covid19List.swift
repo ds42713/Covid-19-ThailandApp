@@ -19,7 +19,7 @@ struct Covid19List: View {
                     NavigationLink(destination:
                                     Covid19View(CovidDataView: item)
                                     .navigationTitle(
-                                        Text("วันที่ : \(item.date)").foregroundColor(.black)  )
+                                        Text("วันที่ : \(item.date)").foregroundColor(.black)  ).padding()
                     )
                     {
                 Text("Date:  \(item.date)")
